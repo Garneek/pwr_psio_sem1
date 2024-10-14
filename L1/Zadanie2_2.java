@@ -33,8 +33,5 @@ public class Zadanie2_2 {
     printSorted(-1.555f, 0f, -500.1f);  // Expected: -500.1f, -1.555f, 0f
     printSorted(3f, 2f, 1f);            // Expected: 1f, 2f, 3f
     printSorted(1.5f, 1.4999f, 1.5001f);// Expected: 1.4999f, 1.5f, 1.5001f
-
-
-
   }
 }
