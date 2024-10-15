@@ -13,7 +13,7 @@ public class Zadanie2_3 {
         return -1;
       }
       return n;
-    }  
+    }
     if (n == 0) return m;
 
     m = Math.abs(m);
@@ -45,7 +45,7 @@ public class Zadanie2_3 {
     printTestCase(12, 49);// Expected: 1
     printTestCase(0, 0);  // Expected: blad - -1
     printTestCase(-5, 15);// Expected: 5
-    printTestCase(-8, -4);// Expected: 14
+    printTestCase(-8, -4);// Expected: 4
     printTestCase(6, -4); // Expected: 2
   }
 }
