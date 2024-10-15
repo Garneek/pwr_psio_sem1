@@ -4,9 +4,20 @@ public class Zadanie2_3 {
    *
    * @param m first integer
    * @param n second integer
-   * @return greatest common divisor of m and n
+   * @return greatest common divisor of m and n; -1 if impossible
    */
   static int GCD(int m, int n) {
+    if (m == 0){
+      if (n == 0){
+        System.out.print("blad w nwd(0, 0). Ktoras z wartosci musi byc niezerowa\n");
+        return -1;
+      }
+      return n;
+    }  
+    if (n == 0) return m;
+
+    m = Math.abs(m);
+    n = Math.abs(n);
     int temp;
     while(n != 0){
       temp = n;
@@ -32,5 +43,9 @@ public class Zadanie2_3 {
     printTestCase(12, 4); // Expected: 4
     printTestCase(14, 35);// Expected: 7
     printTestCase(12, 49);// Expected: 1
+    printTestCase(0, 0);  // Expected: blad - -1
+    printTestCase(-5, 15);// Expected: 5
+    printTestCase(-8, -4);// Expected: 14
+    printTestCase(6, -4); // Expected: 2
   }
 }
